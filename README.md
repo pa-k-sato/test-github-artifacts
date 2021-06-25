@@ -2,6 +2,9 @@
 github artifacts を試してみる
 
 https://docs.github.com/ja/actions/guides/storing-workflow-data-as-artifacts
+
+## nuxt
+アプリは nuxtjs を自動生成したもの
 ## Build Setup
 
 ```bash
