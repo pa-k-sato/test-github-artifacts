@@ -13,6 +13,31 @@ github cli を使ったダウンロード
 gh run download 970269987
 ```
 
+### api で
+https://docs.github.com/en/rest/reference/actions#artifacts
+を見てゴニョゴニョすれば出来そう？
+
+```bash
+# get artifacts
+curl \
+  -H "Accept: application/vnd.github.v3+json" \
+  https://api.github.com/repos/pa-k-sato/test-github-artifacts/actions/artifacts
+ # download
+curl \
+  --dump-header - \
+  -H "Accept: application/vnd.github.v3+json" \
+  https://api.github.com/repos/pa-k-sato/test-github-artifacts/actions/artifacts/70344501/zip
+```
+
+download が `403`エラーとなる。。。
+
+```json
+{
+  "message": "You must have the actions scope to download artifacts.",
+  "documentation_url": "https://docs.github.com/rest/reference/actions#download-an-artifact"
+}
+```
+
 ## nuxt
 アプリは nuxtjs を自動生成したもの
 ## Build Setup
