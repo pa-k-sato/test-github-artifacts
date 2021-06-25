@@ -57,5 +57,5 @@ jobs:
       - name: Archive artifacts 🎁
         uses: actions/upload-artifact@v2
         with:
-          name: dist-without-markdown
+          name: nuxt-app
           path: .nuxt
