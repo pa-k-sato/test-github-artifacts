@@ -1,5 +1,7 @@
 # test-github-artifacts
+github artifacts を試してみる
 
+https://docs.github.com/ja/actions/guides/storing-workflow-data-as-artifacts
 ## Build Setup
 
 ```bash
